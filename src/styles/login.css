@@ -1,4 +1,3 @@
-/* Main Content */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -205,8 +204,6 @@ nav.main-nav ul li a.active:hover {
     font-weight: 600;
 }
 
-
-/* Responsividade Específica */
 @media (max-width: 768px) {
     .login-container {
         grid-template-columns: 1fr;
@@ -291,3 +288,4 @@ nav.main-nav ul li a.active:hover {
     }
 
 }
+
