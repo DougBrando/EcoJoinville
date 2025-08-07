@@ -144,6 +144,12 @@ O design é responsivo, adaptando-se a diferentes tamanhos de tela:
 - **Detalhes do Parceiro** (`parceiroDtls.html`):
   - Exibição de informações do parceiro (nome, responsável, contato, materiais aceitos).
   - Estilização diferenciada por tipo de parceiro (ECO, COO, PEV).
+ 
+
+### Capturas de Tela
+| Página Inicial | Formulário de Cadastro | Lista de Parceiros | Detalhes do Parceiro | Login |
+|---------------|-----------------------|-------------------|---------------------|-------|
+| <img width="1363" height="629" alt="image" src="https://github.com/user-attachments/assets/26ff3c99-6b1a-4b5e-8bbb-122e8bca1931" /> | <img width="588" height="572" alt="image" src="https://github.com/user-attachments/assets/14176031-68ca-4ae9-ae4a-b4dfa69cc1ae" /> | <img width="1362" height="633" alt="image" src="https://github.com/user-attachments/assets/fa4fe501-4a2a-43c3-b797-18b1dd597d01" /> | <img width="1365" height="633" alt="image" src="https://github.com/user-attachments/assets/5353ae53-1d15-4a87-87c1-aecacae13862" /> | <img width="1362" height="630" alt="image" src="https://github.com/user-attachments/assets/00c5fb20-c05e-46bf-9a6f-a12838e6e408" /> |
 
 
 ## 🌍 Parceiros Institucionais
