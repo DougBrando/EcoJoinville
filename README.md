@@ -39,6 +39,11 @@ ecojoinville/
 └── README.md
 ```
 
+### Previa Online:
+ - [Pagina Inicial](https://dougbrando.github.io/EcoJoinville/index.html)
+ - [Pagina de Login](https://dougbrando.github.io/EcoJoinville/login.html)
+ - [Pagina de listagem de parceiros](https://dougbrando.github.io/EcoJoinville/parceiros.html)
+
 ### Descrição dos Arquivos
 
 - **HTML**:
