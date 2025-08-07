@@ -21,7 +21,7 @@ main {
 }
 
 .hero-section {
-    background: url('/src/img/bghero.jpg') no-repeat center center fixed;
+    background: url('../src/img/bghero.jpg') no-repeat center center fixed;
     background-size: cover;
     border-radius: 12px;
     box-shadow: var(--shadow-light);
@@ -289,4 +289,5 @@ nav.main-nav ul li a.active:hover {
     .back-link {
         font-size: 13px;
     }
+
 }
