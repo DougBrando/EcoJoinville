@@ -1,0 +1,253 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+h1.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.parceiros-section {
+    background: var(--text-white);
+    padding: 32px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    border: 3px solid var(--forest-green);
+}
+.parceiros-list:hover [class^="car_"]{
+    opacity: 0.7;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-bar .input-container {
+    position: relative;
+    flex: 1;
+}
+
+.search-bar .input-container i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--forest-green);
+    font-size: 16px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 12px 12px 12px 35px;
+    font-size: 16px;
+    background: var(--text-white);
+    border: 1px solid var(--forest-green);
+    border-radius: var(--border-radius);
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.search-bar input::placeholder {
+    color: var(--text-dark);
+    opacity: 0.7;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--lime-green);
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    background: var(--lime-green);
+    color: var(--text-white);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-bar button:hover {
+    background: var(--forest-green);
+}
+
+.parceiros-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+[class^="car_"] {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid var(--text-dark);
+    transition: all 0.3s ease;
+}
+[class^="car_"]:hover, .parceiros-list:hover [class^="car_"]:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
+    opacity: 1;
+
+}
+
+[class^="car_"].car_ECO {
+    background-color: var(--lime-green);
+}
+
+[class^="car_"].car_COO {
+    background-color: var(--sky-blue);
+    
+}
+
+[class^="car_"].car_PEV {
+    background-color: var(--earth-brown);
+    color: rgba(250, 250, 250, 0.5);
+
+}
+
+[class^="car_"]::before {
+    content: '!';
+    /* fa-recycle */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto 20px;
+}
+
+[class^="car_"].car_ECO::before {
+    content: '\f06c';
+
+}
+
+[class^="car_"].car_COO::before {
+    content: '\f4c4';
+}
+
+[class^="car_"].car_PEV::before {
+    content: '\f3c5';
+    color: rgba(250, 250, 250, 0.5);
+}
+
+[class^="car_"] h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+[class^="car_"] .inclu {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+[class^="car_"] .bairro {
+    font-size: 14px;
+    color: var(--text-white);
+    padding: 5px 10px;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.no-results {
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-dark);
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-dark);
+    padding: 20px;
+    background: var(--text-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    border: 3px solid var(--forest-green);
+}
+
+.loading::before {
+    content: '\f110';
+    /* fa-spinner */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--forest-green);
+    display: inline-block;
+    margin-right: 10px;
+    animation: spin 1s linear infinite;
+}
+
+@media (max-width: 768px) {
+    .parceiros-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .search-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.section-title {
+        font-size: 22px;
+    }
+
+    .parceiros-section {
+        padding: 24px;
+    }
+
+    [class^="car_"] h3 {
+        font-size: 16px;
+    }
+
+    [class^="car_"] .inclu,
+    [class^="car_"] .bairro {
+        font-size: 13px;
+    }
+
+    [class^="car_"]::before {
+        font-size: 36px;
+    }
+
+    .search-bar input {
+        padding: 12px 12px 12px 44px;
+        font-size: 15px;
+    }
+
+    .search-bar button {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoJoinville: Detalhes do parceiro de coleta seletiva em Joinville.">
+    <meta name="keywords" content="EcoJoinville, coleta seletiva, parceiro, sustentabilidade, Joinville">
+    <link rel="icon" href="./src/img/logo.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/parceiroDtls.css">
+    <title>EcoJoinville - Detalhes do Parceiro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <div class="header-logo">
+                <img src="./src/img/logo.jpg" alt="Logo da EcoJoinville" loading="lazy">
+                <h1>EcoJoinville</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+            <ul role="menubar">
+                <li role="menuitem"><a href="index.html">Parceiros</a></li>
+                <li role="menuitem"><a href=".login.html" style="border: 2px solid;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="cards-container">
+                <section id="objetivos" class="content-section" aria-live="polite">
+                    <div class="loading">Carregando detalhes do parceiro...</div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-nav">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Parceiros</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Contato</h3>
+                <p>Email: <a href="mailto:contato@ecojoinville.com">contato@ecojoinville.com</a></p>
+                <p>Telefone: <a href="tel:+5547999999999">(47) 99999-9999</a></p>
+                <p>ODS: <a href="https://brasil.un.org/pt-br/sdgs" target="_blank" rel="noopener">Conheça os Objetivos
+                        de Desenvolvimento Sustentável</a></p>
+                <div class="footer-socials">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><i
+                            class="fab fa-x-twitter"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                            class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-section footer-logos">
+                <img src="./src/img/pmj.png" alt="Prefeitura de Joinville" loading="lazy">
+                <img src="./src/img/lab.png" alt="Lab365" loading="lazy">
+                <img src="./src/img/senai.png" alt="SENAI" loading="lazy">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>🌱 EcoJoinville - Construindo uma cidade mais verde, juntos!</p>
+        </div>
+    </footer>
+    <script src="./src/scripts/parceiroDtls.js"></script>
+    <script src="./src/scripts/menuHamburger.js"></script>
+</body>
+
+</html>
